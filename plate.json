@@ -1,0 +1,17 @@
+{
+    "E":2.07E11, 
+    "pois":0.33,
+    "lenghtx":1,
+    "lenghty":1,
+    "thickness":0.002,
+    "z":0.001,
+    "Resolution":100,
+    "terms":7,
+    "F":20,
+    "type":"point",
+    "XF":0.5,
+    "YF":0.5, 
+    "strainx":0.25,
+    "strainy":0.25,
+    "parity":"none"
+}
