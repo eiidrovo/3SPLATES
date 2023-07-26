@@ -177,6 +177,8 @@ if typeofforce == "distributed":
     sigmax = normalstresx(factor, momentx)
     sigmay = normalstresx(factor, momenty)
 
+    # With this values you can check if the plate satisfies the allowable values or not making an if or something extra
+
     maxdefl = np.max(np.abs(deflection[:,2]))
     maxsigmax = np.max(np.abs(sigmax[:,2]))
     maxsigmay = np.max(np.abs(sigmay[:,2]))
@@ -220,7 +222,6 @@ elif typeofforce == "point":
     
     ## this array contains the results x, y, pxy, mx, my, sigmx, sigmy
     outputarray = np.column_stack((coords,load[:,2], momentx[:,2],momenty[:,2],sigmax[:,2], sigmay[:,2]))
-    # Output array has 7 columns: x, y,p, Mx, My, Sigmax, Sigmay
 
     np.savetxt('output.log',
             outputarray,
