@@ -7,7 +7,7 @@ import json
 def mngen (parity, terms):
     numbers=[]
     if parity == "even":
-        for i in range(0,2*terms,2):
+        for i in range(2,2*terms,2):
             numbers.append(i)
     elif parity == "odd":
         for i in range(1,2*terms,2):
