@@ -128,16 +128,15 @@ def momenty_point(F, mnterms, platecoords, lenghtx, lenghty,posx,posy):
 
 #Normal stresses
 
-
 def normalstresx(factor, momentx):
-    momentx[:,2] *= factor
-    sigmax = momentx
+    sigmax = np.copy(momentx)
+    sigmax[:,2] *= factor
     #Return an array with 3 columns [x, y, sigmax]
     return(sigmax)
 
 def normalstresy(factor, momenty):
-    momenty[:,2] *= factor
-    sigmay = momenty
+    sigmay = np.copy(momenty)
+    sigmay[:,2] *= factor
     #Return an array with 3 columns [x, y, sigmay]
     return(sigmay)
 
